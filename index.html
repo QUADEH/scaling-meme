@@ -10,20 +10,6 @@
 
   <p>Type "jr is awesome"</p>
   
-<script>
-  const pressed = [];
-  const secretCode = 'jr is awesome';
-
-  window.addEventListener('keyup', (e) => {
-  console.log(e.key);
-  pressed.push(e.key);
-  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
-  if (pressed.join('').includes(secretCode)) {
-    console.log('DING DING!');
-    cornify_add();
-  }
-  console.log(pressed);
-});
-</script>
+<script src = "Cornify.js"></script>
 </body>
 </html>
